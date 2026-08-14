@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="0.55" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#glow)"/>
+
+  <!-- subtle grid dots -->
+  <g fill="#334155">
+    <circle cx="60" cy="60" r="2"/>
+    <circle cx="120" cy="60" r="2"/>
+    <circle cx="180" cy="60" r="2"/>
+    <circle cx="240" cy="60" r="2"/>
+    <circle cx="300" cy="60" r="2"/>
+    <circle cx="360" cy="60" r="2"/>
+    <circle cx="60" cy="120" r="2"/>
+    <circle cx="120" cy="120" r="2"/>
+    <circle cx="180" cy="120" r="2"/>
+    <circle cx="240" cy="120" r="2"/>
+    <circle cx="300" cy="120" r="2"/>
+    <circle cx="360" cy="120" r="2"/>
+    <circle cx="60" cy="180" r="2"/>
+    <circle cx="120" cy="180" r="2"/>
+    <circle cx="180" cy="180" r="2"/>
+    <circle cx="240" cy="180" r="2"/>
+    <circle cx="300" cy="180" r="2"/>
+    <circle cx="360" cy="180" r="2"/>
+  </g>
+
+  <!-- left accent bar -->
+  <rect x="70" y="120" width="8" height="120" rx="4" fill="url(#accent)"/>
+
+  <!-- terminal brackets (right) -->
+  <path d="M1000 120 h60 v120 h-60" fill="none" stroke="#334155" stroke-width="3"/>
+  <path d="M1015 135 l-14 45 14 45" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1045 135 l14 45 -14 45" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1090" y="150" font-size="15" fill="#475569">$ cd /home/kenny</text>
+  <text x="1090" y="176" font-size="15" fill="#475569">$ python build_tools.py</text>
+  <text x="1090" y="202" font-size="15" fill="#10b981">done - clean, practical, no bloat</text>
+  <text x="1090" y="228" font-size="15" fill="#475569">$ ./skiplink link.shorten.er</text>
+  <text x="1090" y="254" font-size="15" fill="#10b981">real link reached - 0 ads shown</text>
+
+  <!-- headline -->
+  <text x="110" y="150" font-size="64" font-weight="800" fill="#ffffff" letter-spacing="2">KENNY</text>
+  <text x="112" y="182" font-size="20" fill="#94a3b8">Python developer · turning everyday problems into clean, practical tools</text>
+  <text x="112" y="212" font-size="15" fill="#64748b">SkipLink · Stock Scanner · FileShare · Arch Linux</text>
+
+  <!-- bottom accent line -->
+  <rect x="70" y="310" width="1140" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="110" y="338" font-size="13" fill="#475569">@akashmark8-cloud</text>
+  <text x="1170" y="338" text-anchor="end" font-size="13" fill="#475569">github.com/akashmark8-cloud</text>
+</svg>

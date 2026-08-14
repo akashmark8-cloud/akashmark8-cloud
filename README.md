@@ -1,6 +1,6 @@
 <div align="center">
 
-# KENNY
+<img src="assets/banner.png" alt="KENNY — Python developer" width="100%">
 
 **Python developer** — turning everyday problems into clean, practical tools.
 
