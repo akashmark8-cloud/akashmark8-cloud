@@ -45,6 +45,13 @@ platforms.
 
 </div>
 
+## Support
+
+Like what I build? Free tools stay free, but your support keeps the coffee
+flowing:
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on%20GitHub-6f42c1?logo=github&logoColor=white&style=for-the-badge)](https://github.com/sponsors/akashmark8-cloud)
+
 ---
 
 <div align="center">
