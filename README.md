@@ -1,0 +1,54 @@
+<div align="center">
+
+# KENNY
+
+**Python developer** — turning everyday problems into clean, practical tools.
+
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white&style=flat-square)](https://www.python.org)
+[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=flat-square)](https://git-scm.com)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white&style=flat-square)](https://github.com/features/actions)
+[![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white&style=flat-square)](https://www.gnu.org/software/bash/)
+[![Linux](https://img.shields.io/badge/Arch_Linux-1793D1?logo=archlinux&logoColor=white&style=flat-square)](https://archlinux.org)
+[![Tkinter](https://img.shields.io/badge/Tkinter-3776AB?logo=python&logoColor=white&style=flat-square)](https://docs.python.org/3/library/tkinter.html)
+
+</div>
+
+## About
+
+I build focused, no-nonsense Python tools that solve real day-to-day problems:
+
+- **SkipLink** — one-click bypass for ad-driven URL shorteners. Lands you on the
+  real link, never renders an ad, and honestly reports the walls it can't climb
+  (reCAPTCHA, safelink gates, money pages).
+- **Stock Scanner** — Indian stock scanner with ML predictions for your Groww
+  watchlist.
+- **FileShare** — a web file-sharing experiment.
+
+I develop on Arch Linux (CachyOS), keep things dependency-light, and ship real
+products: CLI + GUI, automated CI/CD, and packaged binaries for multiple
+platforms.
+
+## Featured projects
+
+| Project | What it does | Stack |
+| --- | --- | --- |
+| [**SkipLink**](https://github.com/akashmark8-cloud/skiplink) | Bypass "shorten-and-earn" ad links in one click — GUI + CLI, detects captcha/money-page walls | Python, Tkinter, Playwright, GitHub Actions |
+| [**Stock Scanner**](https://github.com/akashmark8-cloud/stock-scanner) | Indian stock scanner with ML predictions for Groww watchlists | Python, ML |
+| [**FileShare**](https://github.com/akashmark8-cloud/fileshare) | Web file sharing | HTML |
+
+## GitHub stats
+
+<div align="center">
+
+[![Stats](https://github-readme-stats.vercel.app/api?username=akashmark8-cloud&show_icons=true&theme=github_dark&hide_border=true&count_private=true)](https://github.com/akashmark8-cloud)
+[![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=akashmark8-cloud&layout=compact&theme=github_dark&hide_border=true)](https://github.com/akashmark8-cloud)
+
+</div>
+
+---
+
+<div align="center">
+
+*Built with Python, a good cup of coffee, and Arch Linux.*
+
+</div>
