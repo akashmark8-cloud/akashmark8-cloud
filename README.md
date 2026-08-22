@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="KENNY — Python developer" width="100%">
+<img src="assets/banner_animated.svg" alt="KENNY — Python developer" width="100%">
 
 **Python developer** — turning everyday problems into clean, practical tools.
 
@@ -42,6 +42,17 @@ platforms.
 
 [![Stats](https://github-readme-stats.vercel.app/api?username=akashmark8-cloud&show_icons=true&theme=github_dark&hide_border=true&count_private=true)](https://github.com/akashmark8-cloud)
 [![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=akashmark8-cloud&layout=compact&theme=github_dark&hide_border=true)](https://github.com/akashmark8-cloud)
+
+</div>
+
+## Contribution snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akashmark8-cloud/akashmark8-cloud/output/github-contribution-grid-snake-dark.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/akashmark8-cloud/akashmark8-cloud/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
 
 </div>
 
