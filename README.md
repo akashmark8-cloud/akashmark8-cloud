@@ -30,11 +30,15 @@ platforms.
 
 ## Featured projects
 
-| Project | What it does | Stack |
-| --- | --- | --- |
-| [**SkipLink**](https://github.com/akashmark8-cloud/skiplink) | Bypass "shorten-and-earn" ad links in one click — GUI + CLI, detects captcha/money-page walls | Python, Tkinter, Playwright, GitHub Actions |
-| [**Stock Scanner**](https://github.com/akashmark8-cloud/stock-scanner) | Indian stock scanner with ML predictions for Groww watchlists | Python, ML |
-| [**FileShare**](https://github.com/akashmark8-cloud/fileshare) | Web file sharing | HTML |
+<div align="center">
+
+[![SkipLink — bypass ad-driven shorteners](assets/proj_skiplink.svg)](https://github.com/akashmark8-cloud/skiplink)
+[![Stock Scanner — ML stock predictions](assets/proj_stockscanner.svg)](https://github.com/akashmark8-cloud/stock-scanner)
+[![FileShare — web file sharing](assets/proj_fileshare.svg)](https://github.com/akashmark8-cloud/fileshare)
+
+</div>
+
+*Tip: also pin these three repos via **Profile → Customize your pins** (pinning is a profile setting, not part of the README).*
 
 ## GitHub stats
 
