@@ -40,8 +40,8 @@ platforms.
 
 <div align="center">
 
-[![Stats](https://github-readme-stats.vercel.app/api?username=akashmark8-cloud&show_icons=true&theme=github_dark&hide_border=true&count_private=true)](https://github.com/akashmark8-cloud)
-[![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=akashmark8-cloud&layout=compact&theme=github_dark&hide_border=true)](https://github.com/akashmark8-cloud)
+[![Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=akashmark8-cloud&show_icons=true&theme=github_dark&hide_border=true&count_private=true)](https://github.com/akashmark8-cloud)
+[![Languages](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=akashmark8-cloud&layout=compact&theme=github_dark&hide_border=true)](https://github.com/akashmark8-cloud)
 
 </div>
 
