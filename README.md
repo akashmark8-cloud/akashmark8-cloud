@@ -30,15 +30,19 @@ platforms.
 
 ## Featured projects
 
+<!-- FEATURED:AUTO:START -->
 <div align="center">
 
-[![SkipLink — bypass ad-driven shorteners](assets/proj_skiplink.svg)](https://github.com/akashmark8-cloud/skiplink)
-[![Stock Scanner — ML stock predictions](assets/proj_stockscanner.svg)](https://github.com/akashmark8-cloud/stock-scanner)
-[![FileShare — web file sharing](assets/proj_fileshare.svg)](https://github.com/akashmark8-cloud/fileshare)
+[![codexray](assets/cards/codexray.svg)](https://github.com/akashmark8-cloud/codexray)
+[![skiplink](assets/cards/skiplink.svg)](https://github.com/akashmark8-cloud/skiplink)
+[![stock-scanner](assets/cards/stock-scanner.svg)](https://github.com/akashmark8-cloud/stock-scanner)
 
 </div>
+<!-- FEATURED:AUTO:END -->
 
-*Tip: also pin these three repos via **Profile → Customize your pins** (pinning is a profile setting, not part of the README).*
+
+
+*Tip: also pin your top repos via **Profile → Customize your pins** (pinning is a profile setting, not part of the README).*
 
 ## GitHub stats
 

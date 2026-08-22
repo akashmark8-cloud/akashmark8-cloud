@@ -1,0 +1,38 @@
+name: Auto-update featured projects
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: List public repos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api "users/akashmark8-cloud/repos?per_page=100&sort=pushed" --paginate > repos.json
+
+      - name: Generate cyberpunk cards + README section
+        run: python scripts/generate_featured.py repos.json
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f repos.json
+          git add -A
+          git diff --cached --quiet || (git commit -m "ci: refresh featured project cards [skip ci]" && git push)
