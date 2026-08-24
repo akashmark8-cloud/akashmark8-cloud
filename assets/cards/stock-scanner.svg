@@ -131,7 +131,7 @@
   <!-- stat chips -->
   <g font-family="'JetBrains Mono', Consolas, monospace" font-size="11">
     <rect x="106" y="168" width="72" height="22" rx="11" fill="#0d1226" stroke="#00fff7" stroke-opacity="0.55"/>
-    <text x="142" y="183" text-anchor="middle" fill="#00fff7">&#9733; 0</text>
+    <text x="142" y="183" text-anchor="middle" fill="#00fff7">&#9733; 1</text>
     <rect x="186" y="168" width="66" height="22" rx="11" fill="#0d1226" stroke="#ff2ec4" stroke-opacity="0.55"/>
     <text x="219" y="183" text-anchor="middle" fill="#ff2ec4">&#9023; 0</text>
     <rect x="260" y="168" width="82" height="22" rx="11" fill="#0d1226" stroke="#3572A5" stroke-opacity="0.7"/>
