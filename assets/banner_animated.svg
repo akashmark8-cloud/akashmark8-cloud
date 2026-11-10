@@ -1,94 +1,235 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
   <style>
-    @keyframes barhue {
-      0%   { stop-color: #10b981; }
-      50%  { stop-color: #3b82f6; }
-      100% { stop-color: #8b5cf6; }
+    @keyframes neonCycle {
+      0%   { stop-color: #00fff7; }
+      33%  { stop-color: #ff2ec4; }
+      66%  { stop-color: #7b2eff; }
+      100% { stop-color: #00fff7; }
     }
-    .barGrad stop { animation: barhue 6s ease-in-out infinite; }
-    .barGrad stop:nth-of-type(2) { animation-delay: 0.8s; }
-    .barGrad stop:nth-of-type(3) { animation-delay: 1.6s; }
+    .cyberGrad stop { animation: neonCycle 7s linear infinite; }
+    .cyberGrad stop:nth-of-type(2) { animation-delay: 2.3s; }
+    .cyberGrad stop:nth-of-type(3) { animation-delay: 4.6s; }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(8px); }
-      to   { opacity: 1; transform: translateY(0); }
+    @keyframes spinCW { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spinCCW { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+    .ring-cw { transform-origin: 175px 190px; animation: spinCW 18s linear infinite; }
+    .ring-ccw { transform-origin: 175px 190px; animation: spinCCW 12s linear infinite; }
+
+    @keyframes pulseCore {
+      0%, 100% { opacity: 0.95; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.92); }
     }
-    .term-line { opacity: 0; animation: fadeUp 0.5s ease-out forwards; }
-    .l1 { animation-delay: 0.2s; }
-    .l2 { animation-delay: 0.9s; }
-    .l3 { animation-delay: 1.7s; }
-    .l4 { animation-delay: 2.5s; }
-    .l5 { animation-delay: 3.3s; }
-    .l6 { animation-delay: 4.1s; }
+    .core-pulse { transform-origin: 175px 190px; animation: pulseCore 2.6s ease-in-out infinite; }
 
-    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-    .cursor { animation: blink 1.1s steps(1) infinite; }
-
-    @keyframes bob {
-      0%, 100% { transform: translateY(0); }
-      50%      { transform: translateY(-5px); }
+    @keyframes glitchC {
+      0%, 82%, 100% { transform: translate(0, 0); opacity: 0; }
+      83% { transform: translate(-4px, 1.5px); opacity: 0.9; }
+      85% { transform: translate(3px, -1px); opacity: 0.85; }
+      87% { transform: translate(-2px, -1.5px); opacity: 0.9; }
+      89% { transform: translate(0, 0); opacity: 0; }
     }
-    .bob { animation: bob 4.5s ease-in-out infinite; }
+    @keyframes glitchM {
+      0%, 77%, 100% { transform: translate(0, 0); opacity: 0; }
+      78% { transform: translate(4px, -1.5px); opacity: 0.9; }
+      80% { transform: translate(-3px, 1px); opacity: 0.85; }
+      82% { transform: translate(2px, 1.5px); opacity: 0.9; }
+      84% { transform: translate(0, 0); opacity: 0; }
+    }
+    @keyframes neonFlicker {
+      0%, 91%, 94%, 97%, 100% { opacity: 1; }
+      92% { opacity: 0.55; }
+      95% { opacity: 0.78; }
+    }
+    .title-cyan { animation: glitchC 4.5s steps(1) infinite; }
+    .title-mag  { animation: glitchM 4.5s steps(1) infinite 0.7s; }
+    .title-main { animation: neonFlicker 5s linear infinite; }
 
-    @keyframes twinkle { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
-    .dots circle { animation: twinkle 3.2s ease-in-out infinite; }
-    .dots circle:nth-of-type(3n)   { animation-delay: 1.1s; }
-    .dots circle:nth-of-type(3n+1) { animation-delay: 2.2s; }
+    @keyframes scanSweep {
+      0%   { transform: translateY(-40px); }
+      100% { transform: translateY(440px); }
+    }
+    .scan-beam { animation: scanSweep 4.8s linear infinite; }
+
+    @keyframes gridFlow {
+      0%   { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -48; }
+    }
+    .grid-flow { stroke-dasharray: 16 8; animation: gridFlow 2.6s linear infinite; }
+
+    @keyframes termReveal {
+      from { opacity: 0; transform: translateX(-8px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .tline { opacity: 0; animation: termReveal 0.45s ease-out forwards; }
+    .tl1 { animation-delay: 0.2s; }
+    .tl2 { animation-delay: 0.8s; }
+    .tl3 { animation-delay: 1.4s; }
+    .tl4 { animation: termReveal 0.45s ease-out forwards; animation-delay: 2.0s; }
+    .tl5 { animation-delay: 2.6s; }
+    .tl6 { animation-delay: 3.2s; }
+
+    @keyframes blinkCur { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    .cursor { animation: blinkCur 1s steps(1) infinite; }
+
+    @keyframes floatHud {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .float-hud { animation: floatHud 5s ease-in-out infinite; }
+
+    @keyframes packetMove {
+      0%   { transform: translateX(-160px); opacity: 0; }
+      12%  { opacity: 1; }
+      88%  { opacity: 1; }
+      100% { transform: translateX(1320px); opacity: 0; }
+    }
+    .packet-top { animation: packetMove 4.2s linear infinite; }
+    .packet-bot { animation: packetMove 5.4s linear infinite reverse; }
+
+    @keyframes rainDrop {
+      0%   { transform: translateY(-40px); opacity: 0; }
+      20%  { opacity: 0.55; }
+      80%  { opacity: 0.55; }
+      100% { transform: translateY(420px); opacity: 0; }
+    }
+    .rain1 { animation: rainDrop 5.5s linear infinite 0.3s; }
+    .rain2 { animation: rainDrop 6.8s linear infinite 1.9s; }
+    .rain3 { animation: rainDrop 4.9s linear infinite 3.1s; }
+    .rain4 { animation: rainDrop 6.1s linear infinite 0.9s; }
   </style>
 
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f172a"/>
-      <stop offset="1" stop-color="#1e293b"/>
+    <linearGradient id="cyberBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04050e"/>
+      <stop offset="50%" stop-color="#0b0820"/>
+      <stop offset="100%" stop-color="#051024"/>
     </linearGradient>
-    <linearGradient class="barGrad" id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#10b981"/>
-      <stop offset="0.55" stop-color="#3b82f6"/>
-      <stop offset="1" stop-color="#8b5cf6"/>
+    <linearGradient class="cyberGrad" id="neonBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00fff7"/>
+      <stop offset="50%" stop-color="#ff2ec4"/>
+      <stop offset="100%" stop-color="#7b2eff"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.85" cy="0.5" r="0.6">
-      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.25"/>
-      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    <radialGradient id="auraCyan" cx="0.22" cy="0.48" r="0.45">
+      <stop offset="0%" stop-color="#00fff7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#00fff7" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="auraMag" cx="0.78" cy="0.52" r="0.48">
+      <stop offset="0%" stop-color="#ff2ec4" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ff2ec4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00fff7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00fff7" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#00fff7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="packetGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00fff7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00fff7" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ff2ec4" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="bannerClip">
+      <rect x="2" y="2" width="1276" height="396" rx="18"/>
+    </clipPath>
   </defs>
 
-  <rect width="1280" height="360" fill="url(#bg)"/>
-  <rect width="1280" height="360" fill="url(#glow)"/>
+  <!-- Main Frame -->
+  <rect x="2" y="2" width="1276" height="396" rx="18" fill="url(#cyberBg)" stroke="url(#neonBar)" stroke-width="2"/>
+  <g clip-path="url(#bannerClip)">
+    <rect width="1280" height="400" fill="url(#auraCyan)"/>
+    <rect width="1280" height="400" fill="url(#auraMag)"/>
 
-  <!-- twinkling grid dots -->
-  <g class="dots" fill="#334155">
-    <circle cx="60" cy="60" r="2"/><circle cx="120" cy="60" r="2"/><circle cx="180" cy="60" r="2"/><circle cx="240" cy="60" r="2"/><circle cx="300" cy="60" r="2"/><circle cx="360" cy="60" r="2"/>
-    <circle cx="60" cy="120" r="2"/><circle cx="120" cy="120" r="2"/><circle cx="180" cy="120" r="2"/><circle cx="240" cy="120" r="2"/><circle cx="300" cy="120" r="2"/><circle cx="360" cy="120" r="2"/>
-    <circle cx="60" cy="180" r="2"/><circle cx="120" cy="180" r="2"/><circle cx="180" cy="180" r="2"/><circle cx="240" cy="180" r="2"/><circle cx="300" cy="180" r="2"/><circle cx="360" cy="180" r="2"/>
-  </g>
-
-  <!-- animated accent bar -->
-  <rect x="70" y="120" width="8" height="120" rx="4" fill="url(#accent)"/>
-
-  <!-- headline -->
-  <text x="110" y="150" font-size="64" font-weight="800" fill="#ffffff" letter-spacing="2">KENNY</text>
-  <text x="112" y="182" font-size="18" fill="#94a3b8">Python developer · turning everyday problems into clean, practical tools</text>
-  <text x="112" y="210" font-size="14" fill="#64748b">SkipLink · Stock Scanner · FileShare · Arch Linux · dev.to</text>
-
-  <!-- terminal window -->
-  <g class="bob">
-    <rect x="930" y="105" width="300" height="175" rx="12" fill="#0b1220" stroke="#334155" stroke-width="1.5"/>
-    <circle cx="952" cy="126" r="5" fill="#f87171"/>
-    <circle cx="968" cy="126" r="5" fill="#fbbf24"/>
-    <circle cx="984" cy="126" r="5" fill="#34d399"/>
-    <g font-family="'JetBrains Mono', Consolas, monospace" font-size="13">
-      <text class="term-line l1" x="948" y="156" fill="#94a3b8">$ cd ~/kenny</text>
-      <text class="term-line l2" x="948" y="178" fill="#94a3b8">$ python tools.py</text>
-      <text class="term-line l3" x="948" y="200" fill="#34d399">ok - clean, no bloat</text>
-      <text class="term-line l4" x="948" y="222" fill="#94a3b8">$ skiplink short.link</text>
-      <text class="term-line l5" x="948" y="244" fill="#34d399">real link - 0 ads</text>
-      <text class="term-line l6" x="948" y="266" fill="#94a3b8">$ _</text>
+    <!-- Synthwave perspective horizon grid -->
+    <g stroke="#2a1b54" stroke-width="1" opacity="0.65">
+      <line class="grid-flow" x1="0" y1="305" x2="1280" y2="305"/>
+      <line class="grid-flow" x1="0" y1="328" x2="1280" y2="328"/>
+      <line class="grid-flow" x1="0" y1="355" x2="1280" y2="355"/>
+      <line class="grid-flow" x1="0" y1="384" x2="1280" y2="384"/>
+      <line x1="640" y1="280" x2="80" y2="400"/>
+      <line x1="640" y1="280" x2="280" y2="400"/>
+      <line x1="640" y1="280" x2="460" y2="400"/>
+      <line x1="640" y1="280" x2="640" y2="400"/>
+      <line x1="640" y1="280" x2="820" y2="400"/>
+      <line x1="640" y1="280" x2="1000" y2="400"/>
+      <line x1="640" y1="280" x2="1200" y2="400"/>
     </g>
-    <rect class="cursor" x="962" y="255" width="8" height="14" fill="#34d399"/>
+
+    <!-- Subtle Digital Rain Streaks -->
+    <g font-family="Consolas, monospace" font-size="11" fill="#00fff7">
+      <text class="rain1" x="340" y="0" opacity="0">01 10 A9 FF</text>
+      <text class="rain2" x="520" y="0" opacity="0" fill="#ff2ec4">SYS::0x7F</text>
+      <text class="rain3" x="720" y="0" opacity="0">NET::SYNC</text>
+      <text class="rain4" x="840" y="0" opacity="0" fill="#a78bfa">HEX::2077</text>
+    </g>
+
+    <!-- Holographic Scan Beam -->
+    <rect class="scan-beam" x="0" y="0" width="1280" height="34" fill="url(#scanGrad)"/>
+
+    <!-- Top & Bottom Data Rails -->
+    <rect x="40" y="24" width="1200" height="2" fill="#182042"/>
+    <rect class="packet-top" x="0" y="23" width="150" height="4" rx="2" fill="url(#packetGrad)"/>
+    <rect x="40" y="372" width="1200" height="2" fill="#182042"/>
+    <rect class="packet-bot" x="0" y="371" width="150" height="4" rx="2" fill="url(#packetGrad)"/>
   </g>
 
-  <!-- bottom accent line -->
-  <rect x="70" y="310" width="1140" height="3" rx="1.5" fill="url(#accent)"/>
-  <text x="110" y="338" font-size="13" fill="#475569">@akashmark8-cloud</text>
-  <text x="1170" y="338" text-anchor="end" font-size="13" fill="#475569">github.com/akashmark8-cloud</text>
+  <!-- Corner HUD Brackets -->
+  <g stroke="#00fff7" stroke-width="2.5" fill="none">
+    <path d="M20 52 V20 H52"/>
+    <path d="M1228 20 H1260 V52"/>
+    <path d="M1260 348 V380 H1228" stroke="#ff2ec4"/>
+    <path d="M52 380 H20 V348" stroke="#ff2ec4"/>
+  </g>
+
+  <!-- Left Rotating Cyber Neural Reactor -->
+  <g>
+    <circle cx="175" cy="190" r="88" fill="#070d20" fill-opacity="0.7" stroke="#1e2a4a" stroke-width="1.5"/>
+    <circle class="ring-cw" cx="175" cy="190" r="76" fill="none" stroke="#00fff7" stroke-width="2.5" stroke-dasharray="38 18 12 18" stroke-linecap="round"/>
+    <circle class="ring-ccw" cx="175" cy="190" r="58" fill="none" stroke="#ff2ec4" stroke-width="2.5" stroke-dasharray="24 14 8 14" stroke-linecap="round"/>
+    <polygon class="core-pulse" points="175,146 213,168 213,212 175,234 137,212 137,168" fill="#0b1736" stroke="#00fff7" stroke-width="2"/>
+    <path d="M181 163 L157 193 H174 L169 218 L194 186 H177 Z" fill="#00fff7"/>
+    <text x="175" y="302" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#00fff7" letter-spacing="2">CORE // ONLINE</text>
+  </g>
+
+  <!-- Center Cyberpunk Title + Glitch Layers -->
+  <g>
+    <text x="305" y="96" font-family="Consolas, monospace" font-size="12" fill="#ff2ec4" letter-spacing="3">// NEURAL INTERFACE :: @AKASHMARK8-CLOUD</text>
+    <g font-size="76" font-weight="900" letter-spacing="6">
+      <text class="title-cyan" x="301" y="176" fill="#00fff7" opacity="0">KENNY</text>
+      <text class="title-mag"  x="309" y="180" fill="#ff2ec4" opacity="0">KENNY</text>
+      <text class="title-main" x="305" y="178" fill="#f8fafc">KENNY</text>
+    </g>
+    <rect x="305" y="196" width="490" height="4" rx="2" fill="url(#neonBar)"/>
+    <text x="305" y="226" font-size="19" font-weight="600" fill="#cbd5e1">Systems · AI Tools · Windows &amp; Linux Engineering</text>
+    <text x="305" y="256" font-family="Consolas, monospace" font-size="13.5" fill="#38bdf8">[ PYTHON · C# .NET · C++ · TYPESCRIPT · ARCH LINUX ]</text>
+
+    <!-- Status Badges inside Hero -->
+    <g font-family="Consolas, monospace" font-size="11.5" font-weight="700">
+      <rect x="305" y="278" width="142" height="26" rx="13" fill="#08162b" stroke="#00fff7" stroke-opacity="0.7"/>
+      <text x="376" y="295" text-anchor="middle" fill="#00fff7">CLI + NATIVE GUI</text>
+      <rect x="458" y="278" width="138" height="26" rx="13" fill="#1a0926" stroke="#ff2ec4" stroke-opacity="0.7"/>
+      <text x="527" y="295" text-anchor="middle" fill="#ff2ec4">AUTO CI/CD SYNC</text>
+      <rect x="607" y="278" width="140" height="26" rx="13" fill="#06211a" stroke="#39ff88" stroke-opacity="0.7"/>
+      <text x="677" y="295" text-anchor="middle" fill="#39ff88">OPEN SOURCE</text>
+    </g>
+  </g>
+
+  <!-- Right Floating Cyberdeck Terminal -->
+  <g class="float-hud">
+    <rect x="850" y="76" width="380" height="240" rx="14" fill="#060916" fill-opacity="0.92" stroke="url(#neonBar)" stroke-width="1.8"/>
+    <rect x="850" y="76" width="380" height="32" rx="14" fill="#0d132b"/>
+    <circle cx="872" cy="92" r="5" fill="#ff2ec4"/>
+    <circle cx="890" cy="92" r="5" fill="#facc15"/>
+    <circle cx="908" cy="92" r="5" fill="#00fff7"/>
+    <text x="1040" y="96" text-anchor="middle" font-family="Consolas, monospace" font-size="11.5" fill="#94a3b8">kenny@cyberdeck:~</text>
+
+    <g font-family="Consolas, monospace" font-size="13">
+      <text class="tline tl1" x="870" y="138" fill="#00fff7">$ whoami</text>
+      <text class="tline tl2" x="870" y="162" fill="#e2e8f0">  builder :: practical zero-bloat tools</text>
+      <text class="tline tl3" x="870" y="192" fill="#00fff7">$ scan --public-projects</text>
+      <text class="tline tl4" x="870" y="216" fill="#39ff88">  ok :: optimizer · codexray · skiplink · scanner</text>
+      <text class="tline tl5" x="870" y="246" fill="#00fff7">$ sync --profile auto</text>
+      <text class="tline tl6" x="870" y="270" fill="#ff2ec4">  [LIVE] watching github.com/akashmark8-cloud</text>
+    </g>
+    <text x="870" y="298" font-family="Consolas, monospace" font-size="13" fill="#00fff7">$</text>
+    <rect class="cursor" x="884" y="286" width="9" height="15" fill="#39ff88"/>
+  </g>
 </svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="34" viewBox="0 0 1200 34">
+  <style>
+    @keyframes pulseLine {
+      0%   { transform: translateX(-180px); opacity: 0; }
+      15%  { opacity: 1; }
+      85%  { opacity: 1; }
+      100% { transform: translateX(1220px); opacity: 0; }
+    }
+    @keyframes diamondSpin {
+      0%, 100% { transform: scale(1); opacity: 0.95; }
+      50%      { transform: scale(1.22); opacity: 0.55; }
+    }
+    .pulse-r { animation: pulseLine 3.6s linear infinite; }
+    .pulse-l { animation: pulseLine 4.4s linear infinite reverse; }
+    .node    { transform-origin: 600px 17px; animation: diamondSpin 2.4s ease-in-out infinite; }
+  </style>
+  <defs>
+    <linearGradient id="divTrack" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00fff7" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00fff7" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ff2ec4" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#7b2eff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7b2eff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pkCyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00fff7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00fff7" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00fff7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pkMag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff2ec4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff2ec4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ff2ec4" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="divClip"><rect x="0" y="0" width="1200" height="34"/></clipPath>
+  </defs>
+  <g clip-path="url(#divClip)">
+    <rect x="0" y="16" width="1200" height="2" fill="url(#divTrack)"/>
+    <rect class="pulse-r" x="0" y="15" width="160" height="4" rx="2" fill="url(#pkCyan)"/>
+    <rect class="pulse-l" x="0" y="15" width="140" height="4" rx="2" fill="url(#pkMag)"/>
+    <polygon class="node" points="600,6 611,17 600,28 589,17" fill="#070b18" stroke="#00fff7" stroke-width="2"/>
+    <circle cx="600" cy="17" r="3" fill="#ff2ec4"/>
+  </g>
+</svg>

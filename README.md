@@ -1,140 +1,63 @@
 <div align="center">
 
-<img src="assets/banner_animated.svg" alt="KENNY — Python developer" width="100%">
+<img src="assets/banner_animated.svg" alt="KENNY — Systems & AI Tools Builder" width="100%">
 
-**Python developer** — turning everyday problems into clean, practical tools.
+<br/>
 
-[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white&style=flat-square)](https://www.python.org)
-[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=flat-square)](https://git-scm.com)
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white&style=flat-square)](https://github.com/features/actions)
-[![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white&style=flat-square)](https://www.gnu.org/software/bash/)
-[![Linux](https://img.shields.io/badge/Arch_Linux-1793D1?logo=archlinux&logoColor=white&style=flat-square)](https://archlinux.org)
-[![Tkinter](https://img.shields.io/badge/Tkinter-3776AB?logo=python&logoColor=white&style=flat-square)](https://docs.python.org/3/library/tkinter.html)
+**Systems, Automation & AI Tools Builder** — turning everyday friction into fast, zero-bloat software.
+
+[![Python](https://img.shields.io/badge/Python-3.12+-0b1228?logo=python&logoColor=00fff7&style=for-the-badge)](https://www.python.org)
+[![C%23](https://img.shields.io/badge/C%23_.NET-x64-0b1228?logo=dotnet&logoColor=39ff88&style=for-the-badge)](https://dotnet.microsoft.com)
+[![C%2B%2B](https://img.shields.io/badge/C%2B%2B-Systems-0b1228?logo=cplusplus&logoColor=ff2ec4&style=for-the-badge)](https://isocpp.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Data-0b1228?logo=typescript&logoColor=00fff7&style=for-the-badge)](https://www.typescriptlang.org)
+[![Arch Linux](https://img.shields.io/badge/Arch_Linux-CachyOS-0b1228?logo=archlinux&logoColor=38bdf8&style=for-the-badge)](https://archlinux.org)
+[![GitHub Actions](https://img.shields.io/badge/CI%2FCD-Auto_Sync-0b1228?logo=githubactions&logoColor=ff2ec4&style=for-the-badge)](https://github.com/features/actions)
 
 </div>
 
-## About
+<p align="center">
+  <img src="assets/cyber_divider.svg" alt="" width="100%">
+</p>
 
-I build focused, no-nonsense Python tools that solve real day-to-day problems:
+## `// ABOUT :: SYSTEM PROFILE`
 
-- **SkipLink** — one-click bypass for ad-driven URL shorteners. Lands you on the
-  real link, never renders an ad, and honestly reports the walls it can't climb
-  (reCAPTCHA, safelink gates, money pages).
-- **Stock Scanner** — Indian stock scanner with ML predictions for your Groww
-  watchlist.
-- **FileShare** — a web file-sharing experiment.
+I engineer focused, dependency-light software across **Python**, **C#/.NET**, **C++**, and **TypeScript** — from standalone Windows optimizers and codebase indexers to automated scanners and CLI/GUI utilities:
 
-I develop on Arch Linux (CachyOS), keep things dependency-light, and ship real
-products: CLI + GUI, automated CI/CD, and packaged binaries for multiple
-platforms.
+- **[Kenny PC Optimizer Studio](https://github.com/akashmark8-cloud/kenny-pc-optimizer-studio)** — Standalone zero-dependency Windows suite for system/browser scrubbing, safe empty-registry cleanup with mandatory backups, kernel RAM optimization & driver/app updates.
+- **[CodeXRay](https://github.com/akashmark8-cloud/codexray)** — High-speed C++ codebase symbol indexer + MCP server giving AI coding agents instant architectural X-ray vision.
+- **[SkipLink](https://github.com/akashmark8-cloud/skiplink)** — One-click bypass for ad-driven URL shorteners. Lands straight on the real link with zero ads.
+- **[Stock Scanner](https://github.com/akashmark8-cloud/stock-scanner)** — Indian stock scanner powered by ML predictions for Groww watchlists.
 
-## Featured projects
+<p align="center">
+  <img src="assets/cyber_divider.svg" alt="" width="100%">
+</p>
+
+## `// PUBLIC PROJECTS :: AUTO-SYNC MATRIX`
+
+> *Auto-updated whenever a new public project is published via [GitHub Actions](.github/workflows/featured.yml).*
 
 <!-- FEATURED:AUTO:START -->
-<div align="center">
-
-[![codexray](assets/cards/codexray.svg)](https://github.com/akashmark8-cloud/codexray)
-[![skiplink](assets/cards/skiplink.svg)](https://github.com/akashmark8-cloud/skiplink)
-[![stock-scanner](assets/cards/stock-scanner.svg)](https://github.com/akashmark8-cloud/stock-scanner)
-
-</div>
+<p align="center">
+  <a href="https://github.com/akashmark8-cloud/kenny-pc-optimizer-studio"><img src="assets/cards/kenny-pc-optimizer-studio.svg" width="405" alt="kenny-pc-optimizer-studio"></a> <a href="https://github.com/akashmark8-cloud/codexray"><img src="assets/cards/codexray.svg" width="405" alt="codexray"></a>
+  <br/>
+  <a href="https://github.com/akashmark8-cloud/skiplink"><img src="assets/cards/skiplink.svg" width="405" alt="skiplink"></a> <a href="https://github.com/akashmark8-cloud/stock-scanner"><img src="assets/cards/stock-scanner.svg" width="405" alt="stock-scanner"></a>
+</p>
 <!-- FEATURED:AUTO:END -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## GitHub stats
+<p align="center">
+  <img src="assets/cyber_divider.svg" alt="" width="100%">
+</p>
+
+## `// TELEMETRY & LANGUAGE MATRIX`
 
 <div align="center">
 
-[![Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=akashmark8-cloud&show_icons=true&theme=github_dark&hide_border=true&count_private=true)](https://github.com/akashmark8-cloud)
-[![Languages](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=akashmark8-cloud&layout=compact&theme=github_dark&hide_border=true)](https://github.com/akashmark8-cloud)
+[![Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=akashmark8-cloud&show_icons=true&bg_color=060816&title_color=00fff7&icon_color=ff2ec4&text_color=cbd5e1&border_color=1e293b&count_private=true)](https://github.com/akashmark8-cloud)
+[![Languages](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=akashmark8-cloud&layout=compact&bg_color=060816&title_color=00fff7&text_color=cbd5e1&border_color=1e293b)](https://github.com/akashmark8-cloud)
 
 </div>
 
-## Contribution snake
+## `// CONTRIBUTION GRID :: SNAKE`
 
 <div align="center">
 
@@ -145,17 +68,20 @@ platforms.
 
 </div>
 
-## Support
+<p align="center">
+  <img src="assets/cyber_divider.svg" alt="" width="100%">
+</p>
 
-Like what I build? Free tools stay free, but your support keeps the coffee
-flowing:
-
-[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on%20GitHub-6f42c1?logo=github&logoColor=white&style=for-the-badge)](https://github.com/sponsors/akashmark8-cloud)
-
----
+## `// SUPPORT`
 
 <div align="center">
 
-*Built with Python, a good cup of coffee, and Arch Linux.*
+Free tools stay open and free — your support keeps the cyberdeck running:
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor_on_GitHub-0b1228?logo=github&logoColor=ff2ec4&style=for-the-badge&labelColor=1a0926)](https://github.com/sponsors/akashmark8-cloud)
+
+---
+
+*Built with Python, C#, C++, Arch Linux & Windows // `@akashmark8-cloud`*
 
 </div>
